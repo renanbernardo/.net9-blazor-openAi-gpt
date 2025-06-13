@@ -1,14 +1,12 @@
-﻿using BlazorGPT.Options;
-using Microsoft.Extensions.Options;
-using OpenAI.Chat;
+﻿using OpenAI.Chat;
 
 namespace BlazorGPT.Services.OpenAi;
 
-public class OpenAiChatService
+public class OpenAiChatService : IOpenAiChatService
 {
     private readonly ChatClient _chatClient; 
 
-    public OpenAiChatService(IOptions<OpenAiOptions> options, ChatClient chatClient) 
+    public OpenAiChatService(ChatClient chatClient) 
     {
         _chatClient = chatClient; 
     }

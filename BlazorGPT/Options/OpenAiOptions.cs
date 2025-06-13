@@ -1,8 +1,7 @@
-﻿namespace BlazorGPT.Options
+﻿namespace BlazorGPT.Options;
+
+public class OpenAiOptions
 {
-    public class OpenAiOptions
-    {
-        public string ApiKey { get; set; } = string.Empty;
-        public string ModelChatClient { get; set; } = "gpt-4o";
-    }
+    public string ApiKey { get; set; } = string.Empty;
+    public string ModelChatClient { get; set; } = OpenAiModels.Gpt4o;
 }

@@ -18,7 +18,7 @@ public static class DependenciesExtension
             }
             return new ChatClient(model: options.ModelChatClient, apiKey: options.ApiKey);
         });
-        services.AddScoped<OpenAiChatService>();
+        services.AddScoped<IOpenAiChatService, OpenAiChatService>();
     }
 
     public static void AddConfiguration(this IServiceCollection services, IConfiguration configuration)
