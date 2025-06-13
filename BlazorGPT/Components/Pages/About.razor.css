@@ -1,0 +1,41 @@
+﻿.feature-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.feature-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.05);
+}
+
+    .feature-section h4 {
+        color: #0078d4;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+.feature-list {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-impact {
+    background: #eaf6ff;
+    border-left: 4px solid #0078d4;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-innovative {
+    background: #fffbe6;
+    border-left: 4px solid #f1c40f;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
