@@ -6,12 +6,10 @@ namespace BlazorGPT.Services.OpenAi;
 
 public class OpenAiChatService
 {
-    private readonly string _apiKey;
-    private readonly ChatClient _chatClient;
+    private readonly ChatClient _chatClient; 
 
-    public OpenAiChatService(IOptions<OpenAiOptions> options)
+    public OpenAiChatService(IOptions<OpenAiOptions> options, ChatClient chatClient) 
     {
-        _apiKey = options.Value.ApiKey;
-        _chatClient = new ChatClient(model: "gpt-4o", apiKey: _apiKey);
+        _chatClient = chatClient; 
     }
 }

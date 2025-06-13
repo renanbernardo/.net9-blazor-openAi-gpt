@@ -1,11 +1,10 @@
 using BlazorGPT.Components;
-using BlazorGPT.Options;
-using BlazorGPT.Services;
-using BlazorGPT.Services.OpenAi;
+using BlazorGPT.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<OpenAiOptions>(builder.Configuration.GetSection("OpenAI"));
+builder.Services.AddConfiguration(builder.Configuration);
+builder.Services.AddServices();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
