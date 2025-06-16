@@ -1,4 +1,5 @@
-﻿using BlazorGPT.Options;
+﻿using BlazorGPT.Interfaces.Services.OpenAi;
+using BlazorGPT.Options;
 using BlazorGPT.Services.OpenAi;
 using Microsoft.Extensions.Options;
 using OpenAI.Chat;

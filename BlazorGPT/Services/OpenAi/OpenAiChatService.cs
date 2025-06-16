@@ -1,4 +1,5 @@
-﻿using OpenAI.Chat;
+﻿using BlazorGPT.Interfaces.Services.OpenAi;
+using OpenAI.Chat;
 
 namespace BlazorGPT.Services.OpenAi;
 
