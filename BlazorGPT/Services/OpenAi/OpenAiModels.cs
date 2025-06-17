@@ -1,4 +1,4 @@
-﻿namespace BlazorGPT.Options;
+﻿namespace BlazorGPT.Services.OpenAi;
 
 internal static class OpenAiModels
 {

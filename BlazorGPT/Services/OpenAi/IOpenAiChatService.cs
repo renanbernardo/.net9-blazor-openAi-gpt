@@ -1,4 +1,4 @@
-﻿namespace BlazorGPT.Interfaces.Services.OpenAi
+﻿namespace BlazorGPT.Services.OpenAi
 {
     public interface IOpenAiChatService
     {
